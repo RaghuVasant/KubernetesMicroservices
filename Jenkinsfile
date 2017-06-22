@@ -13,5 +13,18 @@ echo "currelt working directory:"+pwd;'''
 gradle clean build'''
       }
     }
+    stage('Test Microservices') {
+      steps {
+        sh '''
+echo "Testing Orderline Service"
+echo "Testing Orderline  Service completed successfully"
+
+
+echo "Testing Order Service"
+echo "Testing Order  Service completed successfully"
+
+'''
+      }
+    }
   }
 }
