@@ -24,7 +24,7 @@ echo "Testing Order Service"
 echo "Testing Order  Service completed successfully"
 
 '''
-        junit '    assertEquals("10 x 0 must be 0", 0, tester.multiply(10, 0));'
+        junit 'targets/surefire-reports/**/*.xml'
       }
     }
     stage('Prepare Dockerimages') {
