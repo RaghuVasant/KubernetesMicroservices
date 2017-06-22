@@ -34,5 +34,18 @@ sudo /home/ubuntu/myproject/KubernetesMicroservices/KubernetesMicroservices/kube
 '''
       }
     }
+    stage('Deploy to Dev') {
+      steps {
+        sh '''echo "deploying to dev"
+sleep 8s
+echo "deployed to dev'''
+      }
+    }
+    stage('Run Smoke Tests') {
+      steps {
+        sh '''kubectl get pods 
+kubectl get services'''
+      }
+    }
   }
 }
