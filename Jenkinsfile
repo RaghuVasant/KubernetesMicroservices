@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh ''' cd ./kubernetes
+        sh ''' cd ../kubernetes
 gradle clean build'''
       }
     }
