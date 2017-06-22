@@ -5,6 +5,6 @@ metadata:
 spec:  
   containers:
   - name: edge
-    image: "elipcero/edgeservice"
+    image: "localhost:5000/elipcero/edgeservice"
     ports:
         - containerPort: 8765
