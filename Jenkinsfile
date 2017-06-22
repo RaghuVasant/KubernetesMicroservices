@@ -38,7 +38,7 @@ sudo /home/ubuntu/myproject/KubernetesMicroservices/KubernetesMicroservices/kube
       steps {
         sh '''echo "deploying to dev"
 sleep 8s
-echo "deployed to dev'''
+echo "deployed to dev"'''
       }
     }
     stage('Run Smoke Tests') {
