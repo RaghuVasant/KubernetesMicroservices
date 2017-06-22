@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: orderline
-        image: "elipcero/orderlineservice"
+        image: "localhost:5000/elipcero/orderlineservice"
         ports:
             - containerPort: 8080
