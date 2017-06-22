@@ -13,7 +13,7 @@ echo "currelt working directory:"+pwd;'''
 gradle clean build'''
       }
     }
-    stage('Test Microservices') {
+    stage('Unit Test Microservices') {
       steps {
         sh '''
 echo "Testing Orderline Service"
@@ -23,6 +23,14 @@ echo "Testing Orderline  Service completed successfully"
 echo "Testing Order Service"
 echo "Testing Order  Service completed successfully"
 
+'''
+      }
+    }
+    stage('Prepare Dockerimages') {
+      steps {
+        sh '''cd /home/ubuntu/kubernetes
+
+sudo hack/local-up-cluster.sh
 '''
       }
     }
