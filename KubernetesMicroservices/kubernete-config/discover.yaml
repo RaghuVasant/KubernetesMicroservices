@@ -7,6 +7,6 @@ metadata:
 spec:  
   containers:
   - name: discovery
-    image: "elipcero/discoveryservice"
+    image: "localhost:5000/elipcero/discoveryservice:latest"
     ports:
       - containerPort: 8761
