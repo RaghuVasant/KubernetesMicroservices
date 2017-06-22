@@ -43,8 +43,8 @@ echo "deployed to dev"'''
     }
     stage('Run Smoke Tests') {
       steps {
-        sh '''kubectl get pods 
-kubectl get services'''
+        sh '''sudo kubectl get pods 
+sudo kubectl get services'''
       }
     }
   }
