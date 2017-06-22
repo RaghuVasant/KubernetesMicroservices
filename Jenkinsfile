@@ -24,7 +24,6 @@ echo "Testing Order Service"
 echo "Testing Order  Service completed successfully"
 
 '''
-        junit 'targets/surefire-reports/**/*.xml'
       }
     }
     stage('Prepare Dockerimages') {
