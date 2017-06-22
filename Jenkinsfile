@@ -28,8 +28,7 @@ echo "Testing Order  Service completed successfully"
     }
     stage('Prepare Dockerimages') {
       steps {
-        sh '''/home/ubuntu/myproject/KubernetesMicroservices/KubernetesMicroservices/kubernete-config
-sudo ./createpods.sh
+        sh '''sudo /home/ubuntu/myproject/KubernetesMicroservices/KubernetesMicroservices/kubernete-config/createpods.sh
 '''
       }
     }
