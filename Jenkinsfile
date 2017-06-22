@@ -9,7 +9,7 @@ echo "currelt working directory:"+pwd;'''
     }
     stage('Build') {
       steps {
-        sh ''' cd ../kubernetes;
+        sh '''cd ./KubernetesMicroservices/
 gradle clean build'''
       }
     }
