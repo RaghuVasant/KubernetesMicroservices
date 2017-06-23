@@ -18,10 +18,10 @@ echo "current working directory:" $PWD;
     stage('Unit Test Microservices') {
       steps {
         sh '''echo "Testing Orderline Service"
-echo "Testing Orderline  Service completed successfully"
+echo "Testing Orderline Service completed successfully"
 
- echo "Testing Order Service"
-echo "Testing Order  Service completed successfully"'''
+echo "Testing Order Service"
+echo "Testing Order Service completed successfully"'''
       }
     }
     stage('Prepare Docker Images') {
