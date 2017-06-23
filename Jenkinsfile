@@ -3,16 +3,16 @@ pipeline {
   stages {
     stage('Setup Environment') {
       steps {
-        sh '''echo "checking PATH:"+PATH;
-echo "currelt working directory:"+pwd;
-
+        sh '''echo "checking PATH:"$PATH;
+echo "current working directory:" $PWD;
 '''
       }
     }
     stage('Build') {
       steps {
         sh '''cd ./KubernetesMicroservices/
-gradle clean build'''
+echo "current working directory:" $PWD;
+/opt/gradle/gradle-3.4.1/bin/gradle clean build'''
       }
     }
   }
