@@ -11,7 +11,7 @@ cd ./KubernetesMicroservices/
     }
     stage('Build') {
       steps {
-        sh 'gradle clean build'
+        sh 'sudo /opt/gradle/gradle-3.4.1/bin/gradle clean build'
       }
     }
   }
