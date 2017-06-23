@@ -11,7 +11,7 @@ echo "currelt working directory:"+pwd;
     stage('Build') {
       steps {
         sh '''cd ./KubernetesMicroservices/
-MYGradle clean build'''
+MyGradle clean build'''
       }
     }
     stage('Unit Test Microservices') {
