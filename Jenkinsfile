@@ -5,12 +5,13 @@ pipeline {
       steps {
         sh '''echo "checking PATH:"+PATH;
 echo "currelt working directory:"+pwd;
+cd ./KubernetesMicroservices/
 '''
       }
     }
     stage('Build') {
       steps {
-        sh '''cd ./KubernetesMicroservices/
+        sh '''
 gradle clean build'''
       }
     }
