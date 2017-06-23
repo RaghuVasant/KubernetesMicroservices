@@ -3,9 +3,10 @@ pipeline {
   stages {
     stage('Setup Environment') {
       steps {
-        sh '''  echo "checking PATH:"+PATH;
+        sh '''echo "checking PATH:"+PATH;
 echo "currelt working directory:"+pwd;
-cd ./KubernetesMicroservices/'''
+cd ./KubernetesMicroservices/
+'''
       }
     }
     stage('Build') {
