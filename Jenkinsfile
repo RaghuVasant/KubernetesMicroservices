@@ -27,7 +27,6 @@ echo "Testing Order Service completed successfully"'''
     stage('Prepare Docker Images') {
       steps {
         sh '''cd ./KubernetesMicroservices/kubernete-config
-sudo chmod -R 777 $PWD
 echo "Current Path:" $PWD
 sudo ./createpods.sh'''
       }
