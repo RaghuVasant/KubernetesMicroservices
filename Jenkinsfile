@@ -36,10 +36,9 @@ sudo ./createpods.sh'''
 
 echo "Bringing up kubernetes dashboard"
 sudo kubectl create -f https://rawgit.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard.yaml
- 
 sudo kubectl get pods
 sudo kubectl get services
-echo "Begin deploying to environment:DEV"'''
+echo "End deploying to environment:DEV"'''
       }
     }
   }
