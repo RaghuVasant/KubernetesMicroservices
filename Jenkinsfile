@@ -26,12 +26,7 @@ echo "Testing Order Service completed successfully"'''
     }
     stage('Prepare Docker Images') {
       steps {
-        sh '''echo $PWD
-cd /home/ubuntu/kubernetes
-daemonize -E BUILD_ID=dontKillMe sudo /home/ubuntu/kubernetes/hack/local-up-cluster.sh
-
-
-cd ./KubernetesMicroservices/kubernete-config
+        sh '''cd ./KubernetesMicroservices/kubernete-config
 sudo ./createpods.sh'''
       }
     }
