@@ -28,7 +28,7 @@ echo "Testing Order Service completed successfully"'''
       steps {
         sh '''cd ./KubernetesMicroservices/kubernete-config
 echo "Current Path:" $PWD
-sudo -S pwd |sudo -S ./createpods.sh'''
+sudo  ./createpods.sh'''
       }
     }
     stage('Deploy to Dev') {
@@ -36,9 +36,9 @@ sudo -S pwd |sudo -S ./createpods.sh'''
         sh '''echo "Begin deploying to environment:DEV"
 
 echo "Bringing up kubernetes dashboard"
-sudo -n kubectl create -f https://rawgit.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard.yaml
-sudo -n kubectl get pods
-sudo -n kubectl get services
+sudo kubectl create -f https://rawgit.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard.yaml
+sudo kubectl get pods
+sudo kubectl get services
 echo "End deploying to environment:DEV"'''
       }
     }
