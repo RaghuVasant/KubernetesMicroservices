@@ -28,7 +28,7 @@ echo "Testing Order Service completed successfully"'''
       steps {
         sh '''cd ./KubernetesMicroservices/kubernete-config
 echo "Current Path:" $PWD
-sudo  ./createpods.sh'''
+sudo ./createpods.sh'''
       }
     }
     stage('Deploy to Dev') {
