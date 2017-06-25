@@ -36,10 +36,7 @@ sudo ./createpods.sh'''
 
 echo "Bringing up kubernetes dashboard"
 sudo kubectl create -f https://rawgit.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard.yaml
-
-kubectl proxy --address='0.0.0.0' --port=8001 --accept-hosts='^*$'
-
-
+ 
 sudo kubectl get pods
 sudo kubectl get services
 echo "Begin deploying to environment:DEV"'''
